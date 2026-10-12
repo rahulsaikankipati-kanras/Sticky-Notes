@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="words.js" defer></script>
+    <script src="wordle.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Wordle Game</h1>
+
+        <div id="game-board"></div>
+
+        <input type="text" id="guess" minlength="5" maxlength="5"
+               placeholder="Enter a 5-letter word" autofocus>
+
+        <button id="submit">Submit Guess</button>
+
+        <p id="message"></p>
+    </div>
+
+</body>
+</html>
