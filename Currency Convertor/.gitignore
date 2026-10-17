@@ -1,0 +1,5 @@
+# Hide API keys from GitHub
+config.js
+.DS_Store
+node_modules/
+*.log

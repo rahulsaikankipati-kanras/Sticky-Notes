@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="converter-section">
+    <h1>Currency Converter</h1>
+
+    <form id="converter-form">
+      <label for="amount">Enter amount</label>
+
+      <input
+        id="amount"
+        type="number"
+        min="0"
+        step="any"
+        placeholder="100"
+        required
+      />
+
+      <div class="currency-selectors">
+        <select id="from-currency">
+          <option value="USD">USD - United States Dollar 🇺🇸</option>
+        </select>
+
+        <span class="to-label">TO</span>
+
+        <select id="to-currency">
+          <option value="INR">INR - Indian Rupee 🇮🇳</option>
+        </select>
+      </div>
+
+      <button type="submit">Convert</button>
+    </form>
+
+    <p id="result" class="result hidden"></p>
+
+    <p id="error-message" class="error-message hidden">
+      An error occurred, please try again later
+    </p>
+  </main>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
